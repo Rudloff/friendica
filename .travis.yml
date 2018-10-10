@@ -1,11 +1,11 @@
 ---
 language: php
 ## Friendica supports PHP version >= 5.6.1
-php:
- - 5.6
- - 7.0
- - 7.1
- - 7.2
+addons:
+ apt:
+  packages:
+   - php5-cli
+   - php5-curl
 
 services:
  - mysql
